@@ -1,0 +1,17 @@
+题目1、按顺序打印APP、ViewController生命周期各个事件
+ 
+一、APP生命周期
+
+点击应用程序图标→执行main函数→通过UIApplicationMain函数创建UIapplication的实例→将Appdelegate设置成UIApplication的代理→监听事件（激活态、非激活态、后台状态、内存警告等）→用户手动或内存报警将程序结束
+
+二、ViewController生命周期
+
+alloc/init(初始化) →loadView→viewDidLoad→viewWillAppear→viewDidAppear→viewDidDisappear→viewDidDisappear→viewDidUnload→dealloc
+
+题目2、五种常用的UI控件
+UIScrollView  UITextView  UITableView  UICollectionView  UIWebView
+
+题目3、三种UITableViewDelegate声明的方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section; 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
